@@ -1,0 +1,21 @@
+name: Minicom Console
+version: "1.0.0"
+slug: minicom-console
+description: Simple shell with minicom for serial consoles
+arch:
+  - amd64
+  - aarch64
+  - armv7
+startup: services
+boot: manual
+init: false
+host_network: false
+map:
+  - share
+devices:
+  - /dev/ttyUSB0
+privileged:
+  - SYS_RAWIO
+options: {}
+schema: {}
+
